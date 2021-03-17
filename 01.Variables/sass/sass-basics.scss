@@ -1,20 +1,9 @@
-//mixin 설정
-@mixin fontSizeBgColor($fontSize: 20px, $bgColor: red) {
-  font-size: $fontSize;
-  background-color: $bgColor;
-}
 
-@mixin linkStyle($textColor, $textDeco) {
-  color: $textColor;
-  text-decoration: $textDeco;
-}
+@import "mixins";
 
-//extend
-%boxShpe {
-  border-radius: 20px;
-  border: 3px solid #f00;
-  box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
-}
+@import "partial/styles";
+
+
 
 html {
   font-size: 18px;

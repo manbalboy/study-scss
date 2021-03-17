@@ -1,0 +1,10 @@
+//mixin 설정
+@mixin fontSizeBgColor($fontSize: 20px, $bgColor: red) {
+  font-size: $fontSize;
+  background-color: $bgColor;
+}
+
+@mixin linkStyle($textColor, $textDeco) {
+  color: $textColor;
+  text-decoration: $textDeco;
+}
