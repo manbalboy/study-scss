@@ -20,23 +20,12 @@ a {
 #box1 {
   font-size: 40px;
   background-color: #ffcccc;
-
+  border-radius: 20px;
+  border: 3px solid #f00;
   box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
 
   &:hover {
     background-color: #ccc;
-  }
-
-  &,&-title {
-    border-radius: 20px;
-    border: 3px solid #f00;
-  }
-
-  //#box1-title
-  &-title {
-    
-    font-style: italic;
-    text-decoration: underline;
   }
 
   & > a {
@@ -76,14 +65,19 @@ a {
   border-radius: 20px;
   border: 3px solid #f00;
   box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
+
+  & > a {
+    color: #ee6633;
+    text-decoration: none;
+  
+    &:hover {
+      color: #a22;
+      text-decoration: underline;
+    }
+  }
 }
 
-#box1 #box2 > a {
-  color: #ee6633;
-  text-decoration: none;
-}
-
-#box1 #box2 > a:hover {
+.box1 .box2 .box3 {
   color: #a22;
   text-decoration: underline;
 }
