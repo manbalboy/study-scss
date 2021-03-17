@@ -21,24 +21,53 @@ a {
   font-size: 40px;
   background-color: #ffcccc;
 
-  border-radius: 20px;
-  border: 3px solid #f00;
   box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
+
+  &:hover {
+    background-color: #ccc;
+  }
+
+  &,&-title {
+    border-radius: 20px;
+    border: 3px solid #f00;
+  }
+
+  //#box1-title
+  &-title {
+    
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  & > a {
+    color: #a22;
+    text-decoration: none;
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+
+  // & > a:hover {
+  //   color: #000;
+  //   text-decoration: underline;
+  // }
 }
 
-#box1 > a {
-  color: #a22;
-  text-decoration: none;
-}
+// & 는 자기자신  > 직계자신 #bpx a 는 아래의 모든 a
+// #box1 > a {
+//   color: #a22;
+//   text-decoration: none;
+// }
 
-#box1 > a:hover {
-  color: #000;
-  text-decoration: underline;
-}
+// #box1 > a:hover {
+//   color: #000;
+//   text-decoration: underline;
+// }
 
-#box1:hover {
-  background-color: #ccc;
-}
+// #box1:hover {
+//   background-color: #ccc;
+// }
 
 #box1 #box2 {
   font-size: 20px;
