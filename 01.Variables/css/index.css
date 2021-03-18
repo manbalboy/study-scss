@@ -3,4 +3,27 @@ body {
   background-color: #efefef;
   font-family: sans-serif;
 }
+
+.box {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+
+.box,
+.box .box-inner {
+  border: 3px solid #00f;
+}
+
+.box .box-inner {
+  padding: 10px;
+  height: 40px;
+  background-color: #ccc;
+}
+
+.box .box-inner .box-inner-title {
+  font-size: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 /*# sourceMappingURL=index.css.map */

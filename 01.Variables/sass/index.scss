@@ -1,5 +1,39 @@
+//변수
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey: #ccc;
+$color-grey-light: #efefef;
+$color-red: #f00;
+$color-blue: #00f;
+$border-color: $color-blue;
+
 body {
-    margin: 0;
-    background-color: #efefef;
-    font-family: sans-serif;
+  margin: 0;
+  background-color: $color-grey-light;
+  font-family: sans-serif;
+}
+
+//Nesting
+.box {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+
+  &,
+  .box-inner {
+    border: 3px solid $border-color;
+  }
+
+  & .box-inner {
+    padding: 10px;
+    height: 40px;
+    background-color: $color-grey;
+
+    & .box-inner-title {
+      font-size: 20px;
+      color: $color-white;
+      background-color: rgba($color-black, 0.5);
+    }
+  }
 }
