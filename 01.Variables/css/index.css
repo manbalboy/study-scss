@@ -8,6 +8,11 @@ body {
   width: 300px;
   height: 300px;
   padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .box,
@@ -16,8 +21,9 @@ body {
 }
 
 .box .box-inner {
-  padding: 10px;
+  width: initial;
   height: 40px;
+  padding: 10px;
   background-color: #ccc;
 }
 

@@ -8,6 +8,33 @@ $color-red: #f00;
 $color-blue: #00f;
 $border-color: $color-blue;
 
+//mixin
+@mixin width-height-padding($w, $h, $p) {
+  width: $w;
+  height: $h;
+  padding: $p;
+}
+
+@mixin pos-bas-center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin pas-abs-center-horizontal() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin pas-abs-center-vertical() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%, -50%);
+}
+
 body {
   margin: 0;
   background-color: $color-grey-light;
@@ -16,9 +43,8 @@ body {
 
 //Nesting
 .box {
-  width: 300px;
-  height: 300px;
-  padding: 20px;
+  @include width-height-padding(300px, 300px, 20px);
+  @include pas-abs-center-horizontal();
 
   &,
   .box-inner {
@@ -26,8 +52,8 @@ body {
   }
 
   & .box-inner {
-    padding: 10px;
-    height: 40px;
+    @include width-height-padding(initial, 40px, 10px);
+
     background-color: $color-grey;
 
     & .box-inner-title {
