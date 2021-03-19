@@ -33,9 +33,9 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (max-width: 600px) {
   .box {
-    border: 10px solid #00f;
+    border: none;
   }
 }
 
@@ -45,27 +45,9 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .box {
-    border: none;
-  }
-}
-
 @media screen and (min-width: 1201px) {
-  .box-inner {
-    height: 50px;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 899) {
-  .box-inner {
-    height: 30px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .box-inner {
-    height: 10px;
+  .box {
+    border: 30px solid #00f;
   }
 }
 /*# sourceMappingURL=index.css.map */
