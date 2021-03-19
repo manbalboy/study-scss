@@ -1,9 +1,6 @@
-
 @import "mixins";
 
 @import "partial/styles";
-
-
 
 html {
   font-size: 18px;
@@ -28,7 +25,7 @@ a {
   @include fontSizeBgColor(40px, #ffcccc);
 
   @extend %boxShpe;
-  
+
   @media screen and (min-width: 501px) and (max-width: 900px) {
     font-size: 15px;
   }
@@ -80,11 +77,10 @@ a {
 
   & > a {
     @include linkStyle(#ee6633, none);
-      
 
     &:hover {
       @include linkStyle(#a22, underline);
-      
     }
   }
 }
+
