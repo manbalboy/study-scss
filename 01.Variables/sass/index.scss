@@ -7,12 +7,22 @@
   @include width-height-padding(300px, 300px, 20px);
   @include pas-abs-center-horizontal();
 
-  &,
-  .box-inner {
+  &, .box-inner {
     border: 3px solid $border-color;
   }
 
+  @include mq('phone') {
+    border: none;
+  }
 
+  @include mq('tablet-land') {
+    border: 25px solid $border-color;
+  }
+
+  @include mq('desktop-big') {
+    border: 10px solid $border-color;
+  }
+  
 
 
   & .box-inner {
@@ -28,19 +38,7 @@
   }
 
   
-  @include mq('phone') {
-    border: none;
-  }
 
-  @include mq('tablet-land') {
-    border: 2px solid blue;
-  
-  }
-
-  @include mq('desktop-big') {
-    border: 30px solid $border-color;
-  }
-  
 
 
 }

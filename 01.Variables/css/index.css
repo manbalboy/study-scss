@@ -15,9 +15,26 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.box,
-.box .box-inner {
+.box, .box .box-inner {
   border: 3px solid #00f;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+  .box {
+    border: 25px solid #00f;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .box {
+    border: 10px solid #00f;
+  }
 }
 
 .box .box-inner {
@@ -31,23 +48,5 @@ body {
   font-size: 20px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-@media screen and (max-width: 600px) {
-  .box {
-    border: none;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 899) {
-  .box {
-    border: 2px solid blue;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  .box {
-    border: 30px solid #00f;
-  }
 }
 /*# sourceMappingURL=index.css.map */
