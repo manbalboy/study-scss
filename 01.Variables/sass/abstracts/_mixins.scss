@@ -1,0 +1,27 @@
+//mixin
+@mixin width-height-padding($w, $h, $p) {
+    width: $w;
+    height: $h;
+    padding: $p;
+  }
+  
+  @mixin pos-bas-center() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin pas-abs-center-horizontal() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin pas-abs-center-vertical() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%, -50%);
+  }
+  
