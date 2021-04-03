@@ -1,0 +1,21 @@
+// 구글폰트 - 나눔고딕, Lato
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300|Nanum+Gothic:400,700,800&subset=korean');
+
+// Icon Font
+// https://material.io/icons
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box; // 넓이 높이에 border 와 padding 을포함
+}
+
+html {
+    font-size : 62.5%; // 16px 의 62.5%
+}
+
+body {
+    padding: 3rem;
+    font-family: 'Nanum Gothic', sans-serif;
+}
