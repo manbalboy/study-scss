@@ -19,7 +19,7 @@
 @keyframes anim1 {
     0% {
         opacity: .2;
-        transform: translate(100px, -30px);
+        transform: translate(100px, -30px); //transform 요소의 위치나 크기를 바꾸는 속성 ,translate : 위치(x,y) ,  scale 크기
     }
 
     50% {
@@ -33,8 +33,8 @@
 
 #box1 {
     animation-name: anim1;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    animation-delay: 3s;
+    animation-duration: 5s; //애니메이션이 지속될 시간
+    animation-fill-mode: both; //forwards -> 애니메이션이 끝나고 남은 마지막상태 
+    animation-iteration-count: 1; // 반복될 카운트
+    animation-delay: 3s; 
 }
