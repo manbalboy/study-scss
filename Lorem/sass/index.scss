@@ -2,8 +2,10 @@
 @import "./abstracts/mixins";
 
 @import "./base/base";
-
 @import "./base/animations";
+@import "./base/typo";
+@import "./components/buttons";
+
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/footer";
