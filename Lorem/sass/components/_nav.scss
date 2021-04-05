@@ -10,10 +10,14 @@
         top: 7rem;
         right: 8rem;
         z-index: 2000;
+        cursor: pointer;
+        border-radius: 2px;
+        box-shadow: 0 1rem 1rem rgba(#000, .1);
+        text-align: center;
     }
 
     &-bg{
-        background-color: #f00;
+        background-image: radial-gradient($color-primary, $color-secondary);
         width: 7rem;
         height: 6rem;
         position: fixed;
@@ -21,9 +25,46 @@
         right: 8rem;
         z-index: 1000;
         transition: all 1s;
+        border-radius: 2px;
     }
 
     &-checkbox:checked ~ &-bg {
         transform: scale(80);
+    }
+
+    // ICON
+    &-icon {
+        position: relative;
+        margin-top: 3rem;
+
+        &::before {
+            top: -0.8rem;
+        }
+
+        &::after {
+            top: 0.8rem;
+        }
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &, &::before, &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: #333;
+            display: inline-block;
+        }
+    }
+
+    &-button:hover &-icon:before {
+        top:-1rem;
+    }
+    
+    &-button:hover &-icon:after {
+        top:-1rem;
     }
 }
