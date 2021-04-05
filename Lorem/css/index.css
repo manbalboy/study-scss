@@ -129,6 +129,8 @@ h3 {
   display: inline-block;
   padding-bottom: 3px;
   border-bottom: 1px solid #285a91;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .btn-text:hover {
@@ -164,9 +166,9 @@ h3 {
   top: 7rem;
   right: 8rem;
   z-index: 1000;
-  -webkit-transition: all 1s;
-  transition: all 1s;
   border-radius: 2px;
+  -webkit-transition: all .8s;
+  transition: all .8s;
 }
 
 .nav-checkbox:checked ~ .nav-bg {
@@ -202,12 +204,28 @@ h3 {
   display: inline-block;
 }
 
-.nav-button:hover .nav-icon:before {
+.nav-button:hover .nav-icon::before {
   top: -1rem;
 }
 
-.nav-button:hover .nav-icon:after {
+.nav-button:hover .nav-icon::after {
   top: 1rem;
+}
+
+.nav-checkbox:checked ~ .nav-button .nav-icon {
+  background-color: transparent;
+}
+
+.nav-checkbox:checked ~ .nav-button .nav-icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.nav-checkbox:checked ~ .nav-button .nav-icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 header {
